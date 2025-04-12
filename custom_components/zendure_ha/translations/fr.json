@@ -1,0 +1,168 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "L'appareil est déjà configuré",
+      "reconfigure_successful": "Reconfiguration réussie"
+    },
+    "error": {
+      "cannot_connect": "Échec de la connexion",
+      "invalid_auth": "Authentification invalide",
+      "unknown": "Erreur inattendue"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "username": "Nom d'utilisateur Zendure",
+          "password": "Mot de passe Zendure",
+          "broker": "Broker MQTT local",
+          "p1meter": "Capteur P1 pour le couplage intelligent"
+        }
+      },
+      "reconfigure": {
+        "data": {
+          "username": "Nom d'utilisateur Zendure",
+          "password": "Mot de passe Zendure",
+          "broker": "Broker MQTT local",
+          "p1meter": "Capteur P1 pour le couplage intelligent"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "scan_interval": "Intervalle d’analyse (secondes)"
+        },
+        "description": "Modifiez vos options.",
+        "title": "Options de l'intégration Zendure"
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "master_switch": {
+        "name": "Interrupteur principal"
+      },
+      "wifi_state": {
+        "name": "État du Wi-Fi"
+      }
+    },
+    "number": {
+      "input_limit": {
+        "name": "Limite d’entrée"
+      },
+      "output_limit": {
+        "name": "Limite de sortie"
+      },
+      "manual_power": {
+        "name": "Puissance manuelle"
+      },
+      "min_soc": {
+        "name": "SOC minimum"
+      },
+      "soc_set": {
+        "name": "SOC maximum"
+      }
+    },
+    "sensor": {
+      "ambient_light_color": {
+        "name": "Couleur de l’éclairage ambiant"
+      },
+      "auto_model": {
+        "name": "Programme de batterie",
+        "state": {
+          "0": "Aucun",
+          "6": "Mode priorité batterie",
+          "7": "Mode sur rendez-vous",
+          "8": "Mode de couplage intelligent",
+          "9": "Mode CT intelligent",
+          "10": "Prix de l'électricité"
+        }
+      },
+      "pack_num": {
+        "name": "Nombre de batteries"
+      },
+      "bat_volt": {
+        "name": "Tension de la batterie"
+      },
+      "hub_state": {
+        "name": "État du hub"
+      },
+      "electric_level": {
+        "name": "Niveau de batterie"
+      },
+      "charging_mode": {
+        "name": "Mode de charge",
+        "state": {
+          "0": "Aucun",
+          "1": "mode 1",
+          "2": "mode 2"
+        }
+      },
+      "charging_type": {
+        "name": "Type de charge",
+        "state": {
+          "0": "Type 0",
+          "1": "Type 1",
+          "2": "Type 2"
+        }
+      },
+      "charging_time": {
+        "name": "Durée de charge"
+      },
+      "pack_state": {
+        "name": "État de la batterie",
+        "state": {
+          "0": "Repos",
+          "1": "En charge",
+          "2": "En décharge"
+        }
+      },
+      "pack_input_power": {
+        "name": "Sortie batterie"
+      },
+      "output_pack_power": {
+        "name": "Entrée batterie"
+      },
+      "hyper_tmp": {
+        "name": "Température batterie"
+      },
+      "strength": {
+        "name": "Force du signal Wi-Fi"
+      }
+    },
+    "select": {
+      "operation": {
+        "name": "Mode de fonctionnement",
+        "state": {
+          "off": "Arrêt",
+          "manual": "Puissance manuelle",
+          "smart": "Couplage intelligent"
+        }
+      },
+      "ac_mode": {
+        "name": "Mode de fonctionnement AC",
+        "state": {
+          "input": "Mode entrée AC",
+          "output": "Mode sortie AC"
+        }
+      },
+      "cluster": {
+        "name": "Regroupement des appareils",
+        "state": {
+          "clusterunknown": "Configuration de cluster inconnue, veuillez vérifier !!",
+          "clusterowncircuit": "L’appareil a son propre circuit ou phase",
+          "cluster800": "Cluster max. 800 W",
+          "cluster1200": "Cluster max. 1200 W",
+          "cluster2400": "Cluster max. 2400 W"
+        }
+      }
+    },
+    "switch": {
+      "lamp_switch": {
+        "name": "LED"
+      }
+    }
+  }
+}
